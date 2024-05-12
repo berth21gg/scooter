@@ -1,3 +1,11 @@
-h1{
-  color: aqua;
+.contPrincipal{
+  margin-top: 64px;
+}
+
+.color404{
+  color: #FF6E00;
+}
+
+.colorFilter404{
+  filter: invert(68%) sepia(64%) saturate(6268%) hue-rotate(360deg) brightness(101%) contrast(108%);
 }
