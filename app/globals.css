@@ -9,3 +9,7 @@
 .colorFilter404{
   filter: invert(68%) sepia(64%) saturate(6268%) hue-rotate(360deg) brightness(101%) contrast(108%);
 }
+
+.nav-link.active{
+  font-weight: bold;
+}

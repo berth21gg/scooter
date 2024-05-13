@@ -2,6 +2,7 @@ import { Inter } from "next/font/google";
 import 'bootstrap/dist/css/bootstrap.css'
 import "./globals.css";
 import Link from "next/link";
+import LinkClient from "./components/LinkClient";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -43,19 +44,13 @@ export default function RootLayout({ children }) {
             <div className="collapse navbar-collapse" id="navbarNav">
               <ul className="navbar-nav">
                 <li className="nav-item">
-                  <Link className="nav-link active" href="/">
-                    Home
-                  </Link>
+                  <LinkClient route="/" texto="Home"/>
                 </li>
                 <li className="nav-item">
-                  <Link className="nav-link" href="/scooter">
-                    Scooters
-                  </Link>
+                <LinkClient route="/scooter" texto="Scooters"/>
                 </li>
                 <li className="nav-item">
-                  <Link className="nav-link" href="/importacion">
-                    Importacion
-                  </Link>
+                <LinkClient route="/importacion" texto="Importacion"/>
                 </li>
               </ul>
             </div>
