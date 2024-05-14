@@ -1,9 +1,9 @@
-import 'bootstrap/dist/css/bootstrap.css'
+import CarouselClient from "./components/CarouselClient";
 
 export default function Home() {
   return (
-    <main class="contPrincipal">
-      <h1 className='text-success'>Hola mundo</h1>
+    <main class="container-fluid pt-5">
+      <CarouselClient/>
     </main>
   );
 }
