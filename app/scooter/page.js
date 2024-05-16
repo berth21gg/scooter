@@ -1,5 +1,16 @@
 import 'bootstrap/dist/css/bootstrap.css'
 import ScooterCard from '../components/ScooterCard'
+import ScooterTop from '../components/ScooterTop'
+
+async function getTopProducts() {
+    const res = await fetch('http://localhost:4000/products?destacado=1', {next: { revalidate: 3600 }})
+
+    if (!res.ok) {
+        throw new Error('Failed to fetch data')
+    }
+
+    return res.json()
+}
 
 async function getProducts() {
     const res = await fetch('http://localhost:4000/products')
@@ -13,7 +24,9 @@ async function getProducts() {
 
 export default async function Scooter() {
     const products = await getProducts()
+    const topProducts = await getTopProducts()
     console.log(products)
+    console.log(topProducts)
 
     return (
         <>
@@ -40,18 +53,12 @@ export default async function Scooter() {
                                     <h4>Top</h4>
                                 </div>
                                 <ul className="list-group list-group-flush">
-                                    <li className="list-group-item">
-                                        Xiaomi Mi Electric Scooter Pro{" "}
-                                        <span className="badge text-bg-dark float-end">546 €</span>
-                                    </li>
-                                    <li className="list-group-item">
-                                        Bongo Serie S{" "}
-                                        <span className="badge text-bg-dark float-end">375 €</span>
-                                    </li>
-                                    <li className="list-group-item">
-                                        Xiaomi Mi Electric Scooter{" "}
-                                        <span className="badge text-bg-dark float-end">250 €</span>
-                                    </li>
+                                    {
+                                        topProducts.map(topProduct=>(
+                                                <ScooterTop key={topProduct.id} modelo={topProduct.modelo} precio={topProduct.precio}/>
+                                            )
+                                        )
+                                    }
                                 </ul>
                             </div>
                         </div>
