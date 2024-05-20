@@ -25,8 +25,8 @@ async function getProducts() {
 export default async function Scooter() {
     const products = await getProducts()
     const topProducts = await getTopProducts()
-    console.log(products)
-    console.log(topProducts)
+    //console.log(products)
+    //console.log(topProducts)
 
     return (
         <>
@@ -40,7 +40,7 @@ export default async function Scooter() {
                             <div className="d-flex p-2 flex-wrap justify-content-between">
                                 {
                                     products.map(product => (
-                                        <ScooterCard key={product.id} img={product.img} modelo={product.modelo} txt={product.txt} />
+                                        <ScooterCard key={product.id} img={product.img} modelo={product.modelo} txt={product.txt} id={product.id} />
                                         )
                                     )
                                 }

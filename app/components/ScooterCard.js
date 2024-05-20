@@ -1,4 +1,6 @@
-export default function ScooterCard({img, modelo, txt}) {
+import Link from "next/link";
+
+export default function ScooterCard({img, modelo, txt, id}) {
     return (
         <div className="card mb-2" style={{ width: "15rem" }}>
             <img
@@ -11,9 +13,9 @@ export default function ScooterCard({img, modelo, txt}) {
                 <p className="card-text text-truncate">
                     {txt}
                 </p>
-                <a href="product.html" className="btn btn-primary">
+                <Link href={"./scooter/" + id} className="btn btn-primary">
                     Más Info
-                </a>
+                </Link>
             </div>
         </div>
     )
