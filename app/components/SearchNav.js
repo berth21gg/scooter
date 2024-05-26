@@ -1,0 +1,41 @@
+'use client'
+import { useState, useEffect } from "react"
+import { useRouter } from "next/navigation"
+
+export default function SearchNav() {
+    const router = useRouter()
+    const [text, setText] = useState("")
+
+    useEffect(
+        ()=>{
+            //console.log(text)
+            router.push('/scooter?precio=' + text)
+        }, [text, router]
+    )
+
+    return (
+        <>
+            {/*BARRA FILTRO*/}
+            <ul
+                className="nav contFiltro justify-content-end contPrincipal pt-3 pb-1 pe-2 text-bg-dark"
+                style={{ marginTop: 64 }}
+            >
+                <li className="nav-item">
+                    <div className="row text-bg-dark">
+                        <label forhtml="inputPrecio" className="col col-form-label text-end">
+                            Precio maximo
+                        </label>
+                        <div className="col">
+                            <input 
+                            value={text}
+                            onChange={e => setText(e.target.value)}
+                            className="form-control" 
+                            id="inputPrecio" />
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </>
+
+    )
+}

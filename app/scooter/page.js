@@ -1,6 +1,7 @@
 import 'bootstrap/dist/css/bootstrap.css'
 import ScooterCard from '../components/ScooterCard'
 import ScooterTop from '../components/ScooterTop'
+import SearchNav from '../components/SearchNav'
 
 async function getTopProducts() {
     const res = await fetch('http://localhost:4000/products?destacado=1', {next: { revalidate: 3600 }})
@@ -30,8 +31,9 @@ export default async function Scooter() {
 
     return (
         <>
+            <SearchNav/>
             {/* CONTENIDO */}
-            <div className="contPrincipal container mb-5">
+            <div className="container mb-5 mt-5">
                 <h2>Scooters ({products.length}) </h2>
                 <div className="grid">
                     <div className="row mt-3">
