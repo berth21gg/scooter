@@ -1,8 +1,10 @@
 import { Inter } from "next/font/google";
 import 'bootstrap/dist/css/bootstrap.css'
+import ThemeProviderClient from "./provider/ThemeProviderClient";
 import "./globals.css";
 import Link from "next/link";
 import LinkClient from "./components/LinkClient";
+import SwitchClient from "./components/SwitchClient";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -15,9 +17,10 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
+        <ThemeProviderClient>
         {/*BARRA NAVEGACION*/}
         <nav
-          className="navbar fixed-top navbar-expand-lg bg-body-secondary"
+          className="navbar fixed-top navbar-expand-lg"
           data-bs-theme=""
         >
           <div className="container-fluid">
@@ -54,20 +57,13 @@ export default function RootLayout({ children }) {
                 </li>
               </ul>
             </div>
-            <div className="form-check form-switch">
-              <input
-                className="form-check-input"
-                type="checkbox"
-                role="switch"
-                id="flexSwitchCheckDefault"
-              />
-              <label className="form-check-label" htmlFor="flexSwitchCheckDefault">
-                Tema oscuro
-              </label>
-            </div>
+
+            <SwitchClient/>
+
           </div>
         </nav>
         {children}
+        </ThemeProviderClient>
       </body>
     </html>
   );

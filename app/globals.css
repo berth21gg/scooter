@@ -17,3 +17,21 @@
 .nav-link.active{
   font-weight: bold;
 }
+
+[data-theme='dark'] body{
+  background-color: rgb(108, 117, 125);
+}
+
+nav{
+  background-color: rgb(233, 236, 239);
+}
+
+[data-theme='dark'] nav{
+  color: #fff;
+  background-color: rgb(52, 58, 64);
+}
+
+[data-theme='dark'] a, [data-theme='dark'] a.nav-link.active{
+  color: #fff;
+  background-color: rgb(52, 58, 64);
+}
