@@ -1,4 +1,5 @@
 import "../(general)/globals.css";
+import './tailwind.css'
 
 
 export default function LoginLayout({ children }) {
