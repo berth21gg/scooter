@@ -8,7 +8,7 @@
         "txt": "La estructura del nuevo patinete Xiaomi Pro es plegable y resistente. Además es ligero (14.2 kg), y te permitirá transportarlo donde quieras o guardarlo sin que ocupe mucho espacio",
         "destacado": 0,
         "marca": "Xiaomi",
-        "precio": 546,
+        "precio": 9876,
         "stock": 15
       },
       {
@@ -19,7 +19,7 @@
         "txt": "Un gran contraste de colores para moverte con estilo. Xiaomi Electric Scooter 4 Go cuenta con una exclusiva base redondeada con forma de circuito de carreras y un llamativo cubo de rueda con gran contraste de color en el diseño, lo que le da un toque de vitalidad y estilo a tus viajes",
         "destacado": 0,
         "marca": "Xiaomi",
-        "precio": 299,
+        "precio": 5400,
         "stock": 0
       },
       {
@@ -30,7 +30,7 @@
         "modelo": "Bongo Serie M",
         "destacado": 0,
         "marca": "Cecotec",
-        "precio": 350,
+        "precio": 6300,
         "stock": 5
       },
       {
@@ -41,7 +41,7 @@
         "txt": "El patinete puede alcanzar una velocidad máxima de 25 km/h y tiene una capacidad de ascensión de un 16 %. Avanza con solo pulsar ligeramente el acelerador.",
         "destacado": 1,
         "marca": "Cecotec",
-        "precio": 375,
+        "precio": 6750,
         "stock": 0
       },
       {
@@ -52,7 +52,7 @@
         "txt": "El patinete puede alcanzar una velocidad máxima de 25 km/h y tiene una capacidad de ascensión de un 16 %. Avanza con solo pulsar ligeramente el acelerador.",
         "destacado": 1,
         "marca": "Xiaomi",
-        "precio": 250,
+        "precio": 4500,
         "stock": 30
       },
       {
@@ -63,7 +63,7 @@
         "txt": "El patinete puede alcanzar una velocidad máxima de 25 km/h y tiene una capacidad de ascensión de un 16 %. Avanza con solo pulsar ligeramente el acelerador.",
         "destacado": 1,
         "marca": "SegWay",
-        "precio": 450,
+        "precio": 8200,
         "stock": 2
       }
     ]

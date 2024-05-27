@@ -1,5 +1,5 @@
 import Link from "next/link"
-import HouseFillClient from "@/app/components/HouseFillClient"
+import HouseFillClient from "@/app/(general)/components/HouseFillClient"
 
 // Obtener datos desde json-server
 async function getProducts(id){
@@ -57,7 +57,7 @@ export default async function ScooterDetail({ params }) {
                         </p>
                         <p className="fs-2 fw-bold mt-5" style={{ color: "#BE004F" }}>
                             {" "}
-                            {product.precio} € <span>IVA incluido</span>
+                            {product.precio} MXN <span>IVA incluido</span>
                         </p>
                     </div>
                 </div>

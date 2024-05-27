@@ -14,6 +14,13 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
+
+  const isLoginPage = typeof window !== 'undefined' && window.location.pathname.startsWith('./login');
+  if (isLoginPage) {
+    // Si la página actual está dentro de "login", no renderizar el layout principal
+    return <ThemeProviderClient>{children}</ThemeProviderClient>;
+  }
+
   return (
     <html lang="en">
       <body>

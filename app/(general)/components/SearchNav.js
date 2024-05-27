@@ -28,8 +28,8 @@ export default function SearchNav() {
                         <div className="col">
                             <input 
                             value={text}
-                            onChange={e => setText(e.target.value)}
                             className="form-control" 
+                            onChange={e => setText(e.target.value)}
                             id="inputPrecio" />
                         </div>
                     </div>
