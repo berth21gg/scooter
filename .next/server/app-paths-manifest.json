@@ -1,0 +1,4 @@
+{
+  "/(general)/reportes/page": "app/(general)/reportes/page.js",
+  "/(general)/cart/page": "app/(general)/cart/page.js"
+}
