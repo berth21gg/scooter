@@ -1,4 +1,4 @@
-// File: /home/berth/Tec/Topicos/ProyectoFinal/scooter/app/(general)/layout.js
+// File: /Users/alextron/Apps/Web/scooter/app/(general)/layout.js
 import * as entry from '../../../../app/(general)/layout.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

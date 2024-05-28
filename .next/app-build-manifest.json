@@ -1,9 +1,9 @@
 {
   "pages": {
-    "/(general)/reportes/page": [
+    "/(general)/scooter/[id]/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/(general)/reportes/page.js"
+      "static/chunks/app/(general)/scooter/[id]/page.js"
     ],
     "/(general)/layout": [
       "static/chunks/webpack.js",
@@ -27,10 +27,31 @@
       "static/css/app/not-found.css",
       "static/chunks/app/not-found.js"
     ],
+    "/_not-found/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/_not-found/page.css",
+      "static/chunks/app/_not-found/page.js"
+    ],
+    "/(general)/scooter/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/(general)/scooter/page.js"
+    ],
     "/(general)/cart/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/(general)/cart/page.js"
+    ],
+    "/(general)/carro/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/(general)/carro/page.js"
+    ],
+    "/(general)/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/(general)/page.js"
     ]
   }
 }
