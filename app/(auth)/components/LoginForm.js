@@ -27,7 +27,7 @@ export default function LoginForm(){
                 setError('Credenciales invalidas')
             }
 
-            router.replace('dashboard')
+            router.refresh()
 
         } catch (error) {
             console.log(error)

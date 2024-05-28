@@ -5,6 +5,8 @@ import "./globals.css";
 import Link from "next/link";
 import LinkClient from "./components/LinkClient";
 import SwitchClient from "./components/SwitchClient";
+import SignOut from "./components/SignOut";
+import { IoCartOutline } from 'react-icons/io5'
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -64,6 +66,15 @@ export default function RootLayout({ children }) {
                 </li>
               </ul>
             </div>
+
+            <SignOut/>
+
+            <Link href='/cart' className="cartLink">
+              <div className="cartMenu">
+                <span className="cartCount">3</span>
+                <IoCartOutline className="cartIcon"/>
+              </div>
+            </Link>
 
             <SwitchClient/>
 

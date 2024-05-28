@@ -43,3 +43,93 @@ nav {
   place-items: center;
   height: 100vh;
 }
+
+.contSignOut {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  font-weight: 700;
+  color: #ffffff;
+  background-color: #313638;
+  border-radius: 28px;
+  border: 1px solid #fff;
+  margin-right: 0.75rem;
+}
+
+.contSignOut:hover {
+  background-color: #000;
+}
+
+.emoji {
+  font-size: 1.25rem;
+}
+
+.cartMenu {
+  position: relative;
+}
+
+.cartIcon {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.cartCount {
+  position: absolute;
+  top: -0.5rem;
+  right: -0.5rem;
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  font-weight: 700;
+  color: #ffffff;
+  background-color: #1d4ed8;
+}
+
+.cartLink {
+  margin-left: 0.5rem;
+  margin-right: 1.5rem;
+}
+
+.cartPage {
+  display: flex;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+  margin-bottom: 18rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.cartPage2 {
+  display: flex;
+  flex-direction: column;
+  width: 1000px;
+}
+
+.cartPage3 {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  gap: 2.5rem;
+
+  @media (min-width: 640px) {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+.cartPage4 {
+  display: flex;
+  margin-top: 1.25rem;
+  flex-direction: column;
+}
+
+.cartPage5 {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.cartPage6 {
+  margin-bottom: 1.25rem;
+  text-decoration: underline;
+}

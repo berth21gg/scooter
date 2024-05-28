@@ -1,4 +1,6 @@
 import Link from 'next/link'
+import './(general)/globals.css'
+import 'bootstrap/dist/css/bootstrap.css'
  
 export default function NotFound() {
   return (

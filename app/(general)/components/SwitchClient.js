@@ -3,18 +3,28 @@ import { useState, useEffect } from "react"
 import { useTheme } from "next-themes"
 
 export default function SwitchClient() {
-    const { theme, setTheme } = useTheme()
+    const { theme, setTheme, resolvedTheme } = useTheme()
+    const [mounted, setMounted] = useState(false)
 
     // default 
     useEffect(()=>{
-        setTheme('light')
-    }, [])
+        setMounted(true)
+        if(!theme){
+            setTheme('light')
+        }
+    }, [theme, setTheme])
+
+    if(!mounted){
+        return null
+    }
 
     // cambio de tema
     const switchTheme = ()=>{
         setTheme(theme=='dark'?'light':'dark')
         //console.log('cambio a ' + theme)
     }
+
+    const isTheme =  theme != 'light' ? ' ☀️' : '🌙'
 
     return (
         <div className="form-check form-switch">
@@ -26,7 +36,7 @@ export default function SwitchClient() {
                 onChange={switchTheme}
             />
             <label className="form-check-label" htmlFor="flexSwitchCheckDefault">
-                Tema oscuro
+                {isTheme}
             </label>
         </div>
     )
